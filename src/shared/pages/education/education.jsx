@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import LessonCard from './lessonCard';
+import LessonCard from './lessonCard.jsx';
 
 import { lessons } from 'assets/data/mockup_lessons';
 import { levels } from 'assets/data/mockup_levels';
