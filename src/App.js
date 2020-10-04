@@ -2,9 +2,9 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch} from "react-router-dom";
 import './App.css';
-import Home from 'shared/pages/home/Home.jsx';
-import Education from 'shared/pages/education/Education.jsx';
-import LessonPage from 'shared/pages/lessonPage/LessonPage.jsx';
+import Home from 'shared/pages/home/home.jsx';
+import Education from 'shared/pages/education/education.jsx';
+import LessonPage from 'shared/pages/lessonPage/lessonPage.jsx';
 
 function App() {
   return (
