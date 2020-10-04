@@ -1,16 +1,23 @@
-import React, { Component } from 'react';
+import React from "react";
+import Content from "../../components/Content.jsx";
+import Navigation from "../../components/Navigation.jsx";
+import Hero from "../../components/Hero.jsx";
+import hero1 from '../../components/img/hero1.jpg';
 
-class Home extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {  }
-    }
-    render() { 
-        return ( 
-        <div>
-
-        </div>);
-    }
+function Home(){
+  return (
+      <div>
+          <Navigation />
+          <Hero img={hero1}/>
+          <div className="container">
+            <div className="row">
+                <Content />
+                <Content />
+            </div>
+          </div>
+      </div>
+    
+    );
 }
- 
+
 export default Home;

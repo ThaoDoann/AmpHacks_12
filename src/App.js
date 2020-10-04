@@ -1,12 +1,10 @@
-import React from 'react';
-import logo from './logo.svg';
-import img from 'assets/images/background.png';
-import './App.css';
-import { BrowserRouter as Router, Route, Switch} from "react-router-dom";
 
-import Home from 'shared/pages/home/home';
-import Education from 'shared/pages/education/education.jsx';
-import LessonPage from 'shared/pages/lessonPage/lessonPage.jsx';
+import React from 'react';
+import { BrowserRouter as Router, Route, Switch} from "react-router-dom";
+import './App.css';
+import Home from 'shared/pages/home/Home.jsx';
+import Education from 'shared/pages/education/Education.jsx';
+import LessonPage from 'shared/pages/lessonPage/LessonPage.jsx';
 
 function App() {
   return (
@@ -25,5 +23,4 @@ function App() {
     </div>
   );
 }
-
 export default App;
