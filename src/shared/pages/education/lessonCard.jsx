@@ -9,10 +9,13 @@ class LessonCard extends Component {
         super(props);
         this.state = {  }
     }
+
+
     render() { 
+      let progress = this.props.video.progress;
         return (
-            <Card>
-                <CardImage src={this.props.video.image} />
+          <Card>
+              <CardImage src={this.props.video.image} />
                 <CardBody>
                     <h3>{this.props.video.title}</h3>
                     <p>{this.props.video.description}</p>
@@ -21,7 +24,10 @@ class LessonCard extends Component {
                       starCount={5}
                       value={this.props.video.rating}
                     />
-                    <span>({this.props.video.rating})</span>
+
+                {this.props.video.progress !== 0 &&
+                <progress id="file" value={this.props.video.progress} max="100"> </progress>
+                }
                 </CardBody>
                 
             </Card>
@@ -57,6 +63,7 @@ const BoldText = styled.span`
 `
 
 const Card = styled.div`
+  width: 100%;
   border-radius: 5px;
   background: #ffffff;
   display: flex;
