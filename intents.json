@@ -1,0 +1,111 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "How are you",
+        "Is anyone there?",
+        "Hello",
+        "Good day",
+        "Whats up"
+      ],
+      "responses": [
+        "Hello!",
+        "Good to see you again!",
+        "Hi there, how can I help?"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "bye",
+        "See you later",
+        "Goodbye",
+        "I am Leaving",
+        "Have a Good day"
+      ],
+      "responses": [
+        "Thanks for choosing RBC!",
+        "See you soon!",
+        "Goodbye! Please check out RBC app for any other question!",
+        "Enjoy your day!"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "mortgage",
+      "patterns": [
+        "house",
+        "mortgage",
+        "I want to buy a home",
+        "How to get a mortgage"
+      ],
+      "responses": [
+        "At RBC, we commit to provide you with the lowest rates on the market and we make sure we accompany you throughout the process of purchasing your home.  For more information. To get started, please check out the Mortgage Affordability Calculator at https://www.rbcroyalbank.com/mortgages/tools/mortgage-affordability-calculator/index.html or visit your nearest RBC branch!"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "investment",
+      "patterns": [
+        "investment",
+        "I want to invest",
+        "buy stocks",
+        "financial market",
+        "trading",
+        "trade"
+      ],
+      "responses": [
+        "Great decision! It's never too early to invest in your future. To get started, please call 1-800-769-2560 or visit https://www.rbcdirectinvesting.com/ for more information!",
+        "Great decision! It's never too early to invest in your future. To get started, please call 1-800-769-2560 or visit your nearest branch for more information!"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "education",
+      "patterns": [
+        "what is",
+        "teach me",
+        "educate me",
+        "explain me",
+        "meaning"
+      ],
+      "responses": [
+        "That's amazing! If you want to learn more, please check out the Financial Education feature on  the RBC Financial Literacy program, specifically designed to teach more in-depth about personal finance: https://ca.rbcwealthmanagement.com/web/mark.taylor/financial-literacy."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Contact",
+      "patterns": [
+        "contact",
+        "number",
+        "call you",
+        "phone",
+        "customer service"
+      ],
+      "responses": [
+        "Please call 1 800 ROYAL® 1-1 (1 800 769-2511), 24 hours a day, seven days a week, to reach out to a customer service associate! We are excited for your next call!"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Mental",
+      "patterns": ["Mental health", "depression", "suicide", "bad", "mood"],
+      "responses": [
+        "Your mental health is absolutely essential, and we are here to provide with any support we can. We have developed Kids Help Phone specifically geared towards young people's mental health issues. Other ressources are available if you need it."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Rates",
+      "patterns": ["rate", "interest rate", "interest"],
+      "responses": [
+        "That's a great idea! Please check https://www.rbcroyalbank.com/rates/ for information about all current rates applicables."
+      ],
+      "context_set": ""
+    }
+  ]
+}
