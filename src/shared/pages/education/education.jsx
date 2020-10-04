@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import LessonCard from './LessonCard.jsx';
+import LessonCard from './lessonCard.jsx';
 
 import { lessons } from 'assets/data/mockup_lessons';
 import { Row, Col } from "reactstrap";
