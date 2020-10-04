@@ -10,3 +10,5 @@ You can ask Walter anything you want to know about finance, litarally everything
 Especially if you are a youth who just wants to create a financial plan for life, this is the service for you.
 
 No need to wait or make an appointment, meet Walter right away!
+
+Prototype: https://www.figma.com/proto/PIXFFkzyKAc0a8VjALtcEL/myCanvas?node-id=1%3A23&scaling=scale-down
