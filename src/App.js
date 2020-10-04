@@ -1,16 +1,10 @@
 
 import React from 'react';
-import { HashRouter, Route } from "react-router-dom";
-import MyLearning from "./routes/MyLearning";
-import Home from "./routes/Home";
-import Navigation from "./components/Navigation";
-// import logo from './logo.svg';
-import './App.css';
 import { BrowserRouter as Router, Route, Switch} from "react-router-dom";
-
-import Home from 'shared/pages/home/home';
-import Education from 'shared/pages/education/education.jsx';
-import LessonPage from 'shared/pages/lessonPage/lessonPage.jsx';
+import './App.css';
+import Home from 'shared/pages/home/Home.jsx';
+import Education from 'shared/pages/education/Education.jsx';
+import LessonPage from 'shared/pages/lessonPage/LessonPage.jsx';
 
 function App() {
   return (
@@ -20,7 +14,6 @@ function App() {
           <Route path="/" component={Home} exact />
           <Route path="/education" component={Education} exact /> 
           <Route exact path="/education/:lessonID" render={(props) => <LessonPage {...props} />} />
-          <Route path="/my-learning" component={MyLearning} />
         </Switch>
       </Router>
     </div>

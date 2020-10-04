@@ -1,8 +1,8 @@
 import React from "react";
-import styled from "styled-components";
-import "./Slide.css";
+// import styled from "styled-components";
+import "./Hero.css";
 
-function Slide(props){
+function Hero(props){
     return (
         <div>    
             <div className="hero-container banner-container">
@@ -15,4 +15,4 @@ function Slide(props){
         </div>
     );
 }
-export default Slide;
+export default Hero;
