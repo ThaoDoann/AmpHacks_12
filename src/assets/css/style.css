@@ -1,0 +1,82 @@
+.card {
+    padding: 10px;
+    background-color: white;
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+}
+
+.cardBody {
+    text-align: left;
+    margin: 4px 10px;
+}
+
+.title {
+    font-weight: bold;
+}
+
+.header {
+    color: white;
+    background-color: #4d5dfb;
+    background-image: linear-gradient(315deg, #4d5dfb 0%, #08c8f6 74%);
+    padding: 15px 5px !important;
+}
+
+.content {
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.fa-star {
+    color: orange;
+}
+
+.score {
+    float: right;
+}
+
+.lock {
+    top: 0;
+    /* float: right; */
+    position: absolute;
+}
+
+.lessonPageHeader {
+    background-color: #006AC3;
+}
+
+.lessonVideo {
+    box-sizing: border-box;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.headerWrapper {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.backButton {
+    font-size: small;
+    color: white;
+    float: left;
+    text-decoration: none;
+}
+
+.videoTitle {
+    margin-left: 10px;
+    float: left;
+    font-size: large;
+}
+
+.lessonContent {
+    text-align: left;
+    font-size: small;
+}
