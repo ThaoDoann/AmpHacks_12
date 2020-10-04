@@ -1,8 +1,11 @@
 import React, { Component } from 'react';
 import StarRatingComponent from 'react-star-rating-component';
+import 'assets/css/style.css';
 
-
-import styled from 'styled-components'
+import { Card, CardImg, CardText, CardBody, CardTitle, CardSubtitle, Button} from 'reactstrap';
+import { useHistory } from 'react-router-dom';
+import * as img from 'assets/images/lessons/accounting.jpg';
+import 'assets/css/style.css';
 
 class LessonCard extends Component {
     constructor(props) {
@@ -11,78 +14,34 @@ class LessonCard extends Component {
     }
 
 
+  viewLesson = () => {
+    const history = useHistory;
+    console.log(this.props.video.id)
+    history.push(`/education/${this.props.video.id}`)
+  }
+
     render() { 
       let progress = this.props.video.progress;
         return (
-          <Card>
-              <CardImage src={this.props.video.image} />
-                <CardBody>
-                    <h3>{this.props.video.title}</h3>
-                    <p>{this.props.video.description}</p>
-                    <StarRatingComponent 
-                      name="rating" 
-                      starCount={5}
-                      value={this.props.video.rating}
-                    />
-
-                {this.props.video.progress !== 0 &&
-                <progress id="file" value={this.props.video.progress} max="100"> </progress>
-                }
-                </CardBody>
-                
+          <div>
+            <Card className="card" onClick={() => this.viewLesson()}>
+              
+              <CardImg left width="20%" src={img} alt="Card image cap" />
+              <CardBody className="cardBody">
+                <CardTitle>{this.props.video.title}</CardTitle>
+                <StarRatingComponent name="rating"  starCount={5}  value={this.props.video.rating} /> <br/>
+                {this.props.video.progress !== 0 && (
+                  <div>
+                    Progress:
+                    <progress id="file" value={this.props.video.progress} max="100" style={{float: 'right'}}> </progress>
+                  </div> )
+                  }
+              </CardBody>
             </Card>
+          </div>
         );
     }
 }
  
 export default LessonCard;
-
-
-const Text = styled.div`
-  margin: 0;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  color: #1F3B57;
-`
-
-const TextSmall = styled(Text)`
-  font-size: 0.75rem;
-`
-
-const TextSmallSecondary = styled(TextSmall)`
-  color: #63778E;
-`
-
-const StockStatus = styled(TextSmall)`
-  margin-top: 14px;
-  color: #0E6946;
-`
-
-const BoldText = styled.span`
-  font-weight: 600;
-`
-
-const Card = styled.div`
-  width: 100%;
-  border-radius: 5px;
-  background: #ffffff;
-  display: flex;
-  align-items: center;
-  max-width: 400px;
-  margin-bottom: 10px;
-`
-
-const CardBody = styled.div`
-  padding: 0rem 1rem 0rem 1rem;
-`
-
-const CardImage = styled.img`
-  width: 100px;
-  height: 100px;
-  background: #76869B;
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
-  border: none;
-`
-
 
