@@ -9,6 +9,8 @@ import LessonPage from 'shared/pages/lessonPage/LessonPage.jsx';
 function App() {
   return (
     <div className="App">
+      <div className="mobileScreen">
+        <div className="screenContent">
       <Router>
         <Switch>
           <Route path="/" component={Home} exact />
@@ -16,6 +18,8 @@ function App() {
           <Route exact path="/education/:lessonID" render={(props) => <LessonPage {...props} />} />
         </Switch>
       </Router>
+      </div>
+      </div>
     </div>
   );
 }

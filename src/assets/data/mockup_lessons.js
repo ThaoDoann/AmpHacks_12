@@ -6,7 +6,9 @@ export const lessons = [{
         rating: 4.7,
         comments: [],
         image: "assets/images/lessons/accounting.jpg",
-        link: "https://www.youtube.com/watch?v=wvXDB9dMdEo"
+        link: "https://www.youtube.com/watch?v=wvXDB9dMdEo",
+        progress: 50,
+        isLock: false
     },
     {
         id: 2,
@@ -16,7 +18,9 @@ export const lessons = [{
         rating: 4,
         comments: [],
         image: "assets/images/lessons/credit-debit.jpg",
-        link: "https://www.youtube.com/watch?v=wvXDB9dMdEo"
+        link: "https://www.youtube.com/watch?v=wvXDB9dMdEo",
+        progress: 20,
+        isLock: false
     },
     {
         id: 3,
@@ -26,8 +30,36 @@ export const lessons = [{
         rating: 5,
         comments: [],
         image: "assets/images/lessons/accounting.jpg",
-        link: "https://www.youtube.com/watch?v=wvXDB9dMdEo"
+        link: "https://www.youtube.com/watch?v=wvXDB9dMdEo",
+        progress: 0,
+        isLock: false
     },
+    {
+        id: 3,
+        title: "lesson 4",
+        category: "finance",
+        description: "Description",
+        rating: 5,
+        comments: [],
+        image: "assets/images/lessons/accounting.jpg",
+        link: "https://www.youtube.com/watch?v=wvXDB9dMdEo",
+        progress: 0,
+        isLock: true
+    },
+    {
+        id: 3,
+        title: "lesson 5",
+        category: "finance",
+        description: "Description",
+        rating: 5,
+        comments: [],
+        image: "assets/images/lessons/accounting.jpg",
+        link: "https://www.youtube.com/watch?v=wvXDB9dMdEo",
+        progress: 0,
+        isLock: true
+    },
+
+
 
 
 ]

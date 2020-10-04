@@ -12,13 +12,17 @@ class Education extends Component {
          }
     }
 
+    viewLesson = () => {
+        console.log(this.props.video.id)
+    }
+
     displayLessons() {
         let videoLists = [];
         this.state.sampleData.map((item, index) => {
             videoLists.push(
-                <Row xs={6} key={index} id={item.id}>
+                <div id={item.id} onClick={() => this.viewLesson()}>
                     <LessonCard video= {item}/>
-                </Row>
+                </div>
             );
         })
         return videoLists;
@@ -27,6 +31,7 @@ class Education extends Component {
     render() { 
         return (
         <div>
+            <h2>Lesson Plan</h2>
                 {this.displayLessons()}
         </div>
         );
